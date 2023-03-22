@@ -10931,7 +10931,7 @@ generators:
     methods: ""
     denyRoles: ""
     allowRoles: ""
-    pathPatterns: "GET:/api/v1/bank-account\nPUT:/api/v1/bank-account/deposit-amount"
+    pathPatterns: "PUT:/api/v1/bank-account/deposit-amount"
     resourceSamples: ""
     queryParams: ""
     bodyProperties: ""
