@@ -24,6 +24,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "Unsecured"
@@ -120,6 +122,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "ABAC_Level7"
@@ -154,6 +158,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "Hijack_Level1"
@@ -321,6 +327,8 @@ generators:
     resourceSamples: "User-Create"
     queryParams: null
     bodyProperties: "id,name"
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "SQL_Injection2"
@@ -366,6 +374,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "Sensitive_Data_Exposure"
@@ -527,6 +537,8 @@ generators:
       Post:/api/v1/accounts[Accept: application/json,Content-Type: application/json]"
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "Custom_Header"
@@ -786,6 +798,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "InvalidAuth"
@@ -826,6 +840,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "InvalidAuthEmpty"
@@ -865,6 +881,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "InvalidAuthSQL"
@@ -900,6 +918,8 @@ generators:
     resourceSamples: "Get:/api/v1/orgs/:Allowed[ROLE_ADMIN]\nPost:/api/v1/accounts/:Allowed[ROLE_ADMIN,ROLE_PM]"
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "RBAC"
@@ -934,6 +954,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65be3990205"
@@ -1870,6 +1892,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65be700021a"
@@ -5815,6 +5839,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65be9360220"
@@ -6939,6 +6965,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65bea8c0227"
@@ -7511,6 +7539,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65bed49023c"
@@ -9748,6 +9778,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65beedb0243"
@@ -10589,6 +10621,8 @@ generators:
     resourceSamples: null
     queryParams: null
     bodyProperties: null
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "ADoS"
@@ -10659,6 +10693,8 @@ generators:
     resourceSamples: "User-Create"
     queryParams: null
     bodyProperties: "id,name"
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "SQL_Injection_Filter"
@@ -10698,6 +10734,8 @@ generators:
     resourceSamples: "User-Create"
     queryParams: null
     bodyProperties: "id,name"
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "SQL_Injection_Timebound"
@@ -10737,6 +10775,8 @@ generators:
     resourceSamples: "User-Create"
     queryParams: null
     bodyProperties: "id,name"
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "NoSQL_Injection_Filter"
@@ -10776,6 +10816,8 @@ generators:
     resourceSamples: "User-Create"
     queryParams: null
     bodyProperties: "id,name"
+    piiAssertionInclude: null
+    piiAssertionExclude: null
   authors: ""
   abacResources: null
   category: "NoSQL_Injection"
@@ -10931,10 +10973,12 @@ generators:
     methods: ""
     denyRoles: ""
     allowRoles: ""
-    pathPatterns: "PUT:/api/v1/bank-account\nPUT:/api/v1/bank-account/deposit-amount"
+    pathPatterns: "GET:/api/v1/bank-account\nPUT:/api/v1/bank-account/deposit-amount"
     resourceSamples: ""
     queryParams: ""
     bodyProperties: ""
+    piiAssertionInclude: null
+    piiAssertionExclude: "email"
   authors: null
   abacResources: null
   category: "PII"
