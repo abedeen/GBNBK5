@@ -1,15 +1,15 @@
 ---
-parent: Api_v1_orgs_id
-name: ApiV1OrgsIdPutPii
+parent: Api_v1_bank-account
+name: ApiV1BankAccountPostPii
 description: null
 authors:
 - apisec Bot
 type: SUITE
 init: []
 localVariables: []
-path: /api/v1/orgs/{id}
-endpoint: /api/v1/orgs/{{@Var.id}}
-method: PUT
+path: /api/v1/bank-account
+endpoint: /api/v1/bank-account
+method: POST
 auth: Default
 headers:
 - 'Accept: application/json'
@@ -18,19 +18,24 @@ testCases:
 - id: 1
   body: |-
     {
-      "billingEmail" : "{{@Var.billingEmail}}",
-      "company" : "{{@Var.company}}",
+      "accountBalance" : "{{@Var.accountBalance}}",
+      "accountNumber" : "{{@Var.accountNumber}}",
       "createdBy" : "{{@Var.createdBy}}",
       "createdDate" : "{{@Var.createdDate}}",
-      "description" : "{{@Var.description}}",
       "id" : "{{@Var.id}}",
       "inactive" : false,
-      "location" : "{{@Var.location}}",
       "modifiedBy" : "{{@Var.modifiedBy}}",
       "modifiedDate" : "{{@Var.modifiedDate}}",
-      "name" : "{{@Var.name}}",
-      "orgPlan" : "{{@Var.orgPlan}}",
-      "orgType" : "{{@Var.orgType}}",
+      "user" : {
+        "createdBy" : "{{@Var.createdBy}}",
+        "createdDate" : "{{@Var.createdDate}}",
+        "id" : "{{@Var.id}}",
+        "inactive" : false,
+        "modifiedBy" : "{{@Var.modifiedBy}}",
+        "modifiedDate" : "{{@Var.modifiedDate}}",
+        "name" : "{{@Var.name}}",
+        "version" : "{{@Var.version}}"
+      },
       "version" : "{{@Var.version}}"
     }
   inactive: false

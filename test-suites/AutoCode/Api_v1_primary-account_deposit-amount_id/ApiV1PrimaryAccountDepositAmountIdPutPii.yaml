@@ -34,8 +34,9 @@ testCases:
 useCategoryAssertion: false
 assertions:
 - '@StatusCode != 404'
-- '@Response.$..email != @PlainText'
 - '@Response.$..telephoneNumber != @PlainText'
+- '@Response.$..paying != @PlainText'
+- '@Response.$..criticalAssetId != @PlainText'
 cleanup: []
 severity: Medium
 category: Pii

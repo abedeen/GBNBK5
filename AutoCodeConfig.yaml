@@ -10973,12 +10973,12 @@ generators:
     methods: ""
     denyRoles: ""
     allowRoles: ""
-    pathPatterns: "POST:/api/v1/bank-account\nGET:/api/v1/bank-account\nPUT:/api/v1/bank-account/deposit-amount"
+    pathPatterns: "PUT:/api/v1/bank-account/deposit-amount"
     resourceSamples: ""
     queryParams: ""
     bodyProperties: ""
-    assertionInclude: null
-    assertionExclude: null
+    assertionInclude: "paying,criticalAssetId"
+    assertionExclude: "email"
   authors: null
   abacResources: null
   category: "PII"
