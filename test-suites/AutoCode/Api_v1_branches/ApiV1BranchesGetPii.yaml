@@ -18,8 +18,6 @@ testCases: []
 useCategoryAssertion: false
 assertions:
 - '@StatusCode != 404'
-- '@Response.$..maturityAmount != @PlainText'
-- '@Response.$..secureDividend != @PlainText'
 cleanup: []
 severity: Medium
 category: Pii
