@@ -1,14 +1,14 @@
 ---
-parent: Api_v1_primary-transaction_id
-name: ApiV1PrimaryTransactionIdGetPii
+parent: Api_v1_bank-account
+name: ApiV1BankAccountGetPii
 description: null
 authors:
 - apisec Bot
 type: SUITE
 init: []
 localVariables: []
-path: /api/v1/primary-transaction/{id}
-endpoint: /api/v1/primary-transaction/{{@Var.id}}
+path: /api/v1/bank-account
+endpoint: /api/v1/bank-account
 method: GET
 auth: Default
 headers:

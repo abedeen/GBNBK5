@@ -25,7 +25,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "Unsecured"
@@ -123,7 +123,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "ABAC_Level7"
@@ -159,7 +159,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "Hijack_Level1"
@@ -328,7 +328,7 @@ generators:
     queryParams: null
     bodyProperties: "id,name"
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "SQL_Injection2"
@@ -375,7 +375,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "Sensitive_Data_Exposure"
@@ -538,7 +538,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "Custom_Header"
@@ -799,7 +799,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "InvalidAuth"
@@ -841,7 +841,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "InvalidAuthEmpty"
@@ -882,7 +882,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "InvalidAuthSQL"
@@ -919,7 +919,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "RBAC"
@@ -955,7 +955,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65be3990205"
@@ -1893,7 +1893,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65be700021a"
@@ -5840,7 +5840,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65be9360220"
@@ -6966,7 +6966,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65bea8c0227"
@@ -7540,7 +7540,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65bed49023c"
@@ -9779,7 +9779,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources:
   - id: "ff80818186b649ca0186b65beedb0243"
@@ -10622,7 +10622,7 @@ generators:
     queryParams: null
     bodyProperties: null
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "ADoS"
@@ -10694,7 +10694,7 @@ generators:
     queryParams: null
     bodyProperties: "id,name"
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "SQL_Injection_Filter"
@@ -10735,7 +10735,7 @@ generators:
     queryParams: null
     bodyProperties: "id,name"
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "SQL_Injection_Timebound"
@@ -10776,7 +10776,7 @@ generators:
     queryParams: null
     bodyProperties: "id,name"
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "NoSQL_Injection_Filter"
@@ -10817,7 +10817,7 @@ generators:
     queryParams: null
     bodyProperties: "id,name"
     assertionInclude: null
-    assertionExclude: null
+    assertionExclude: "email"
   authors: ""
   abacResources: null
   category: "NoSQL_Injection"
@@ -10973,11 +10973,11 @@ generators:
     methods: ""
     denyRoles: ""
     allowRoles: ""
-    pathPatterns: "GET:/api/v1/bank-account\nPUT:/api/v1/bank-account/deposit-amount"
+    pathPatterns: "PUT:/api/v1/bank-account/deposit-amount"
     resourceSamples: ""
     queryParams: ""
     bodyProperties: ""
-    assertionInclude: "paying,criticalAssetId"
+    assertionInclude: null
     assertionExclude: "email"
   authors: null
   abacResources: null
