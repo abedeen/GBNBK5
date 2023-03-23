@@ -10973,11 +10973,11 @@ generators:
     methods: ""
     denyRoles: ""
     allowRoles: ""
-    pathPatterns: "PUT:/api/v1/bank-account/deposit-amount"
+    pathPatterns: "GET:/api/v1/bank-account\nPUT:/api/v1/bank-account/deposit-amount"
     resourceSamples: ""
     queryParams: ""
     bodyProperties: ""
-    assertionInclude: null
+    assertionInclude: "maturityAmount,secureDividend"
     assertionExclude: "email"
   authors: null
   abacResources: null
