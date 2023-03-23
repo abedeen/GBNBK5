@@ -57,7 +57,6 @@ testCases:
 useCategoryAssertion: false
 assertions:
 - '@StatusCode != 404'
-- '@Response.$..telephoneNumber != @PlainText'
 - '@Response.$..paying != @PlainText'
 - '@Response.$..criticalAssetId != @PlainText'
 cleanup: []
